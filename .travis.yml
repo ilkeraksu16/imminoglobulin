@@ -1,0 +1,21 @@
+language: csharp
+dist: trusty
+sudo: required
+mono: none
+dotnet: 1.0.4
+
+install:
+  - export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+before_script:
+  dotnet restore
+
+script:
+  dotnet build
+
+notifications:
+  email:
+    recipients:
+      omrumbakitemiz@icloud.com
+    on_success: never
+    on_failure: always 
