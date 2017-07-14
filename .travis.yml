@@ -11,10 +11,15 @@ install:
   - export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 before_script:
+  - echo "It is before_script"
   dotnet restore
 
 script:
+  - echo "It is script"
   dotnet build
+
+after_script:
+  - echo "It is after_script"
 
 notifications:
   email:
