@@ -30,7 +30,7 @@ namespace imminoglobulin
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync($"Hello Universe. It's {DateTime.Now}");
+                await context.Response.WriteAsync($"Hello Universe. It's {DateTime.Now} :)");
             });
         }
     }
