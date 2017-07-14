@@ -22,3 +22,11 @@ notifications:
       omrumbakitemiz@icloud.com
     on_success: never
     on_failure: always 
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: c9d3c534-9490-4e1e-affb-850a03b17c4d
+  app: imminoglobulin
+  on:
+    all_branches: true
