@@ -24,8 +24,5 @@ notifications:
     on_failure: always 
 
 deploy:
-  provider: heroku
-  api_key:
-    secure: c9d3c534-9490-4e1e-affb-850a03b17c4d
-  on:
-    all_branches: true
+  provider: azure_web_apps
+  site: azure_deployment_sitename       # If AZURE_WA_SITE isn't set
