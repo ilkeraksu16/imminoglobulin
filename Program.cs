@@ -13,6 +13,7 @@ namespace imminoglobulin
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
+                .UseEnvironment("Production")
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
