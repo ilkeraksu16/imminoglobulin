@@ -4,6 +4,9 @@ sudo: required
 mono: none
 dotnet: 1.0.4
 
+services:
+  - docker
+
 install:
   - export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
