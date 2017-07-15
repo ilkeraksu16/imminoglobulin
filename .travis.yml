@@ -26,3 +26,5 @@ notifications:
 deploy:
   provider: azure_web_apps
   verbose: true
+  on:
+    all_branches: true
